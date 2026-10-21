@@ -36,7 +36,7 @@ The project uses NumPy, pandas, scikit-learn, matplotlib, and pytest.
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone <REPOSITORY_URL>
+git clone https://github.com/cyongxi/stats607-unit2-project.git
 cd stats607-unit2-project
 ```
 
