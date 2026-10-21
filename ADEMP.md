@@ -149,16 +149,11 @@ The primary estimand is the probability of exact signed-support recovery under e
 
 For a given scenario, let $\beta^{*}$ denote the true coefficient vector and $\hat{\beta}$ the Lasso estimate.
 
-Following Wainwright (2009), signed support is defined using the elementwise sign function:
+For each coefficient, the sign function is defined as follows:
 
-$$
-\mathrm{sign}(\beta_j^{*})=
-\begin{cases}
-+1, & \beta_j^{*}>0,\\
-0, & \beta_j^{*}=0,\\
--1, & \beta_j^{*}<0.
-\end{cases}
-$$
+- $\mathrm{sign}(\beta_j^{*})=1$ if $\beta_j^{*}>0$.
+- $\mathrm{sign}(\beta_j^{*})=0$ if $\beta_j^{*}=0$.
+- $\mathrm{sign}(\beta_j^{*})=-1$ if $\beta_j^{*}<0$.
 
 Exact signed-support recovery occurs when
 
@@ -186,9 +181,11 @@ We reproduce the Lasso estimator used in Wainwright (2009). The Lasso estimates 
 
 Following Equation (3) of the original paper, the estimator is defined as
 
+
 $$
-\hat{\beta}=\arg\min_{\beta\in\mathbb{R}^{p}}\left\{\frac{1}{2n}\|y-X\beta\|_2^2+\lambda_n\|\beta\|_1\right\}.
+\hat{\beta}=\underset{\beta\in\mathbb{R}^{p}}{\mathrm{argmin}}\left(\frac{1}{2n}\|y-X\beta\|_2^2+\lambda_n\|\beta\|_1\right).
 $$
+
 
 The first term measures residual squared error, normalized by sample size, while the second term encourages sparsity in the estimated coefficients.
 
