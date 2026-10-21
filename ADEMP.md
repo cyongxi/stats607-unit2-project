@@ -151,11 +151,11 @@ For a given scenario, let $\beta^{*}$ denote the true coefficient vector and $\h
 
 For each coefficient, the sign function is defined as follows:
 
-Positive coefficient: $\mathrm{sign}(\beta_j^{*}) = 1$ when $\beta_j^{*} > 0$.
+Positive coefficient: $`\mathrm{sign}(\beta_j^{*}) = 1`$ when $`\beta_j^{*} > 0`$.
 
-Zero coefficient: $\mathrm{sign}(\beta_j^{*}) = 0$ when $\beta_j^{*} = 0$.
+Zero coefficient: $`\mathrm{sign}(\beta_j^{*}) = 0`$ when $`\beta_j^{*} = 0`$.
 
-Negative coefficient: $\mathrm{sign}(\beta_j^{*}) = -1$ when $\beta_j^{*} < 0$.
+Negative coefficient: $`\mathrm{sign}(\beta_j^{*}) = -1`$ when $`\beta_j^{*} < 0`$.
 
 Exact signed-support recovery occurs when
 
