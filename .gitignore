@@ -1,0 +1,20 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# IDE files
+.vscode/
+
+# Generated full-simulation outputs
+results/raw/simulation_results.csv
+results/raw/pilot_results.csv
+
+# Additional pilot backups
+results/raw/*backup*.csv
