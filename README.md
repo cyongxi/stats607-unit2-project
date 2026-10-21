@@ -93,7 +93,8 @@ Remove generated full-simulation results and figures:
 make clean
 ```
 
-**Estimated runtime:** The full simulation performs 25,200 Lasso fits. Runtime depends on the machine and installed software versions. Allow sufficient time for the simulation to finish.
+
+**Estimated runtime:** Approximately 1–2 minutes for the complete simulation pipeline (`make all`) on a MacBook Air with Python 3.12.14. The measured wall-clock runtime was 74.90 seconds for 25,200 Lasso fits, including simulation, analysis, and figure generation. Actual runtime may vary by machine.
 
 ## Project Structure
 
